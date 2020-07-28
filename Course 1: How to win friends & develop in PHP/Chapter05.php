@@ -32,3 +32,22 @@ $toys[] = ['name' => 'Frisbee', 'color' => 'Red'];
     <h3><?php echo $toy['name']; ?></h3>
 <h4><?php echo $toy['color']; ?></h4>
         <?php } ?>
+
+    
+    //    Using the count() function, print the total number of pet toys that we're selling in the <h4> tag.
+
+  //  Hint: Be sure the $toys variable is defined before trying to count it!
+    
+    <?php
+$toys = [];
+$toys[] = ['name' => 'Bacon Bone', 'color' => 'Bacon-colored'];
+$toys[] = ['name' => 'Tennis Ball', 'color' => 'Yellow'];
+$toys[] = ['name' => 'Frisbee', 'color' => 'Red'];
+?>
+
+
+<h4>
+    Selling <?php echo count($toys) ?> Toys
+</h4>
+
+
