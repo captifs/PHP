@@ -15,3 +15,21 @@ $toys = json_decode($toysjson, true);
     <h3><?php echo $toy['name']; ?></h3>
     <h4><?php echo $toy['color']; ?></h4>
 <?php } ?>
+
+
+  //  Use file_put_contents() to save the text Dogs rule! into a new file called doglife.txt.
+
+   // Then read that file and print the string in the h2 tag.
+
+
+<!-- save the doglife.txt file -->
+<?php 
+$file_pointer = 'doglife.txt';
+$open = 'Dogs rule!';
+file_put_contents($file_pointer, $open); 
+?>
+<h2>
+    <?php 
+    echo file_get_contents('doglife.txt');
+    ?>
+</h2>
