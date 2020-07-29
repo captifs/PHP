@@ -19,3 +19,29 @@ $toys = json_decode($contents, true);
     echo 'no color';
 }; ?></h4>
 <?php } ?>
+
+
+
+
+
+
+<?php
+$contents = file_get_contents('toys.json');
+$toys = json_decode($contents, true);
+?>
+
+<?php foreach ($toys as $toy) { ?>
+    <h3><?php echo $toy['name']; ?></h3>
+    <h4>
+        <?php
+       if (!array_key_exists('color', $toy) || $toy['color'] == '') {
+    echo 'no color';
+} elseif ($toy['color'] == 'multiple')  {
+    echo '(Multiple Colors)';
+} else {
+    echo $toy['color'];
+}
+
+        ?>
+    </h4>
+<?php } ?>
