@@ -45,3 +45,13 @@ var_dump($name, $description);
 
     <button type="submit">Add toy</button>
 </form>
+
+
+/*
+    Dump the $_SERVER variable and run your code to figure out which key stores information about what browser you're using. (your code will be graded wrong at first, but don't worry!)
+
+    Hint The browser information is a big long string that (in this example) will include Mozilla in it.
+
+    Print the browser information in the h3 tag.
+*/
+
