@@ -21,9 +21,17 @@ $toys = json_decode($contents, true);
 <?php } ?>
 
 
+/*
 
+    Use an if - elseif - else statement to handle the following 3 possible situations:
 
+    If the color key exists and is set to multiple, print "Multiple Colors".
 
+    If the color key does not exist, print "no color"
+
+    Otherwise, print the actual color value
+
+*/
 
 <?php
 $contents = file_get_contents('toys.json');
