@@ -55,3 +55,11 @@ var_dump($name, $description);
     Print the browser information in the h3 tag.
 */
 
+
+
+
+<h3>
+   <?php  var_dump($_SERVER);
+    echo $HTTP_USER_AGENT;
+    ?>
+</h3>
